@@ -1,0 +1,62 @@
+body {
+  margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#container {
+  margin: 10vh;
+  justify-content: center;
+}
+
+#heatmap {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 80vh;
+  min-width: 80vh;
+}
+
+.tick {
+  font-size: calc(10px + 0.1vmin);
+  color: gray;
+}
+
+.value {
+  font-size: calc(10px + 0.1vmin);
+}
+
+#tooltip {
+  background: white;
+  position: absolute;
+  color: gray;
+  border-radius: 0.2rem;
+  padding: 1.5vh;
+  min-width: 130px;
+  min-height: 70px;
+  box-shadow: gray 0px 4px 12px;
+  font-size: calc(10px + 0.5vmin);
+}
+
+#tooltip:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-color: #ffffff transparent;
+  border-width: 8px 8px 0;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -8px;
+}
+
+#legend {
+  width: 150px;
+  height: 40px;
+  margin-left: auto;
+}
+
+rect.shadow {
+  filter: drop-shadow(0 0 1rem DimGray);
+  cursor: none;
+}
